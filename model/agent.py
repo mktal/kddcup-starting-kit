@@ -24,7 +24,7 @@ class Agent(object):
         order_finish_timestamp, int
         day_of_week, int
         reward_units, float
-        pickup_eta, float
+        pick_up_eta, float
 
     :return: a list of dict, the key in the dict includes:
         order_id and driver_id, the pair indicating the assignment
@@ -48,17 +48,15 @@ class Agent(object):
         timestamp: int
         driver_info: a list of dict, the key in the dict includes:
             driver_id: driver_id of the idle driver in the treatment group, int
-            location: longitude and latitude of the driver, [lng, lat], float
-            grid_id: grid_id corresponding corresponding to location, str
+            grid_id: id of the grid the driver is located at, str
         day_of_week: int
 
     :return: a list of dict, the key in the dict includes:
         driver_id: corresponding to the driver_id in the od_list
-        destination: longitude and latitude of the driver, [lng, lat],
-                     indicating the reposition destination
+        destination: id of the grid the driver is repositioned to, str
     """
     repo_action = []
     for driver in repo_observ['driver_info']:
       # the default reposition is to let drivers stay where they are
-      repo_action.append({'driver_id': driver['driver_id'], 'destination': driver['location']})
+      repo_action.append({'driver_id': driver['driver_id'], 'destination': driver['grid_id']})
     return repo_action
