@@ -2,6 +2,8 @@
 
 This repository is the official Learning to Dispatch and Reposition (LDR) Competition **submission template and starter kit**! Clone this to make a new submission!
 
+![](http://img-hxy021.didistatic.com/static/outreach/KDD_Cup_1000X500_2020-3-30.jpg)
+
 **Other Resources**:
 - [DiDi Official Announcement](https://outreach.didichuxing.com/competition/kddcup2020/) - Background and overview.
 - [LDR Competition Page](https://biendata.com/competition/kdd_didi/) - Main registration page & leaderboard
