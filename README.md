@@ -79,19 +79,30 @@ class Agent(object):
 
 ```
 
-Look into the `agent.py` file inside the `model` folder for more details. The `agent.py` implements a default policy and is provided for you to base your submission. The `model` folder should contain all your submitted files including your implementations and dependencies.
+Look into the `agent.py` file inside the `model` folder for more details. The `agent.py` implements a default policy and is provided for you to base your submission. The `model` folder should contain all your submitted files including the `agent.py` and its dependencies.
 
 ## Test your agent before submission
 
-To make sure your agent run correctly in the online evaluation environment, you just need to run
+During online evaluation the simulator will look for the `agent.py` file inside your submission bundle and import your `Agent` class. A valid submission requires
+
+- An `agent.py` file in the **first directory level** of your submission bundle after unzipped;
+- The `Agent` class structure and function signatures kept unchanged as documented above.
+
+We suggest developing your agent inside the `model` folder. To make sure your agent run correctly in the online evaluation environment, you just need to run
 
 ```bash
 ./run_local.sh
 ```
 
-It will launch a docker environment, import your model and call your agent on a sample dataset provided for you as a quick test before the submission.
+It will launch a docker environment, import your model and call your agent on a sample dataset provided for you as a quick test before the submission. 
 
 In particular, the `local_test.py` gives an example of how your submission will be used in the simulation and the `Dockerfile` describes the environment where your `agent.py` will be executed.
+
+## Get ready for submission
+
+When you are ready to submit, zip the `model` folder while making sure no extra directories are created within the zip, e.g., go inside the `model` folder and run `zip -r ../submission.zip . -x '*.git*' -x '*__pycache__*'` which creates your submission bundle `submission.zip` just outside of the `model` folder. 
+
+Finally head over to the [competition website](https://biendata.com/competition/kdd_didi/) and see how your algorithm performs!
 
 
 
