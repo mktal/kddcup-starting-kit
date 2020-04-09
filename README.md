@@ -81,7 +81,7 @@ class Agent(object):
 
 Look into the `agent.py` file inside the `model` folder for more details. The `agent.py` implements a default policy and is provided for you to base your submission. The `model` folder should contain all your submitted files including the `agent.py` and its dependencies.
 
-## Test your agent before submission
+## Test your agent locally
 
 During online evaluation the simulator will look for the `agent.py` file inside your submission bundle and import your `Agent` class. A valid submission requires
 
