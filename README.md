@@ -28,7 +28,7 @@ Please contact the organizers (kddcup2020@didiglobal.com) if you have any proble
 
 ## Quick Start
 
-Clone this repo. Create your submission bundle by zipping the whole `model` folder. Make sure no extra directories are created within the zip, e.g., `zip -j submission.zip model/*`. And head over to the [competition website](https://biendata.com/competition/kdd_didi/) for your first submission!
+Clone this repo. Create your submission bundle by zipping the whole `model` folder. Make sure **no extra directories are created within the zip**, e.g., `zip -j submission.zip model/*`. And head over to the [competition website](https://biendata.com/competition/kdd_didi/) for your first submission!
 
 ## Implement your own dispatch and reposition agent!
 
@@ -79,7 +79,7 @@ class Agent(object):
 
 ```
 
-Look into the `agent.py` file inside the `model` folder for more details. The `agent.py` implements a default policy and is provided for you to base your submission. The `model` folder should contain all your submitted files including the `agent.py` and its dependencies.
+Look into the `agent.py` file inside the `model` folder for more details. The `agent.py` implements a default policy and is provided for you to base your submission. The `model` folder must contain all your submitted files including **the `agent.py`** and its dependencies.
 
 ## Test your agent locally
 
