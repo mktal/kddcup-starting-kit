@@ -12,6 +12,7 @@ This repository is the official Learning to Dispatch and Reposition (LDR) Compet
 * [Implement your own dispatch and reposition agent](#implement-your-own-dispatch-and-reposition-agent)
 * [Test your agent locally](#test-your-agent-locally)
 * [Get ready for submission](#get-ready-for-submission)
+* [Dev tips](#dev-tips)
 
 **Other Resources**:
 - [DiDi Official Announcement](https://outreach.didichuxing.com/competition/kddcup2020/) - Background and overview.
@@ -112,6 +113,38 @@ In particular, the `local_test.py` gives an example of how your submission will 
 When you are ready to submit, zip the `model` folder while making sure no extra directories are created within the zip, e.g., go inside the `model` folder and run `zip -r ../submission.zip . -x '*.git*' -x '*__pycache__*'` which creates your submission bundle `submission.zip` just outside of the `model` folder. 
 
 Finally head over to the [competition website](https://biendata.com/competition/kdd_didi/) and see how your algorithm performs!
+
+## Dev tips
+
+#### Enhance your agent with your offline trained `modelfile`
+
+Suppose your `model` directory looks like this, where `modelfile` resides next to the `agent.py` inside the `model` folder
+```
+├── model                   
+    └── agent.py            
+    └── modelfile                
+```
+You can use code like below to load the `modelfile` into your agent
+```python
+import os
+MODEL_PATH = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), 'modelfile')
+class Agent(object):
+  def __init__(self):
+    self._load(MODEL_PATH)
+  def _load(self, modelpath):
+    """ Implement your model loading routine """
+    pass
+```
+
+#### Debug using the error messages
+
+We currently do not provide stack trace for security reasons. We do provide error messages with error types defined for each case involving the `Agent`:
+
+- `InitAgentError` when there are exceptions from `Agent.__init__`
+- `DispatchAgentError` when there are exceptions from `Agent.dispatch`
+- `RepositionAgentError` when there are exceptions from `Agent.reposition`
+
 
 
 
