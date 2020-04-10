@@ -8,7 +8,7 @@ This repository is the official Learning to Dispatch and Reposition (LDR) Compet
 
 ## Table of contents
 
-* [Quick Start](#quick-start)
+* [Quickstart](#quickstart)
 * [Implement your own dispatch and reposition agent](#implement-your-own-dispatch-and-reposition-agent)
 * [Test your agent locally](#test-your-agent-locally)
 * [Get ready for submission](#get-ready-for-submission)
@@ -35,7 +35,7 @@ Please contact the organizers (kddcup2020@didiglobal.com) if you have any proble
     └── agent.py            # IMPORTANT: Your implementation of the dispatch and reposition.
 ```
 
-## Quick Start
+## Quickstart
 
 Clone this repo. Create your submission bundle by zipping the whole `model` folder. Make sure **no extra directories are created within the zip**, e.g., `zip -j submission.zip model/*`. And head over to the [competition website](https://biendata.com/competition/kdd_didi/) for your first submission!
 
