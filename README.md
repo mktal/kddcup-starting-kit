@@ -6,6 +6,13 @@ This repository is the official Learning to Dispatch and Reposition (LDR) Compet
 
 ![](http://img-hxy021.didistatic.com/static/outreach/KDD_Cup_1000X500_2020-3-30.jpg)
 
+## Table of contents
+
+* [Quick Start](#quick-start)
+* [Implement your own dispatch and reposition agent](#implement-your-own-dispatch-and-reposition-agent)
+* [Test your agent locally](#test-your-agent-locally)
+* [Get ready for submission](#get-ready-for-submission)
+
 **Other Resources**:
 - [DiDi Official Announcement](https://outreach.didichuxing.com/competition/kddcup2020/) - Background and overview.
 - [LDR Competition Page](https://biendata.com/competition/kdd_didi/) - Main registration page & leaderboard
