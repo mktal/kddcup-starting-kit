@@ -65,7 +65,7 @@ class Agent(object):
         order_finish_timestamp, estimated order finish time, int
         day_of_week, Monday=0, Sunday=6, int
         reward_units, reward received after the order is completed, float
-        pick_up_eta, estimated time (in seconds) the order gets picked up, float
+        pick_up_eta, estimated time (in seconds) it takes the driver to pick up the order, float
 
     :return: a list of dict, the key in the dict includes:
         order_id and driver_id, the pair indicating the assignment
