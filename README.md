@@ -42,7 +42,7 @@ Clone this repo. Create your submission bundle by zipping the whole `model` fold
 
 ## Implement your own dispatch and reposition agent!
 
-A LDR agent is equipped with two performable actions, `dispatch` and `reposition`, which receive `observations` from the environment and compute order-driver assignment and repositioning destinations for the drivers.
+A LDR agent is equipped with two performable actions, `dispatch` and `reposition`, which receive `observations` from the environment, computing order-driver assignment and driver repositioning destinations, respectively.
 
 ```python
 class Agent(object):
