@@ -115,6 +115,10 @@ Finally head over to the [competition website](https://biendata.com/competition/
 
 ## Development tips
 
+#### Test your agent locally first before online submission
+
+Online evaluations has a limit on number of submissions per day and provides only rudimentary error messages for security reasons. The purpose of this repo is thus to provide you with a local testing environment so that you can eliminate most of errors without the need for online submission. Also in local testing you get access to the full stack trace and much faster feedback. This can save you a lot of time debugging. Please make use of it as much as possible. 
+
 #### Enhance your agent with your offline trained `modelfile`
 
 Suppose your `model` directory looks like this, where `modelfile` resides next to the `agent.py` inside the `model` folder
