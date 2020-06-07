@@ -7,7 +7,7 @@
 class Agent(object):
   """ Agent for dispatching and reposition """
 
-  def __init__(self):
+  def __init__(self, **kwargs):
     """ Load your trained model and initialize the parameters """
     pass
 
