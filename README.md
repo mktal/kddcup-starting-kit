@@ -8,7 +8,7 @@ This repository is the official Learning to Dispatch and Reposition (LDR) Compet
 
 ## Value Function is All You Need: A Unified Learning Framework for Ride Hailing Platforms
 
-Xiaocheng Tang, Fan Zhang, Zhiwei (Tony) Qin, Yansheng Wang, Dingyuan Shi, Bingchen Song, Yongxin Tong, Hongtu Zhu, Jieping Ye
+[Xiaocheng Tang](https://sourl.cn/htM8QT), Fan Zhang, Zhiwei (Tony) Qin, Yansheng Wang, Dingyuan Shi, Bingchen Song, Yongxin Tong, Hongtu Zhu, Jieping Ye
 
 A link to our KDD 2021 paper describing the winning solution can be found [here](https://sourl.cn/Mn5SRq)
 
